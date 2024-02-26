@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search1" />
+
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:background="@drawable/edit_search_selector"
+            android:hint="@string/search_goods"
+            android:inputType="text"
+            android:maxLength="11"
+            android:minWidth="150dp"
+            android:textColorHint="@color/gray" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button_selector"
+            android:text="@string/search"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp_content"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <androidx.viewpager.widget.PagerTabStrip
+                    android:id="@+id/pts_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </androidx.viewpager.widget.ViewPager>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/orange" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="今日特价"
+            android:textColor="@color/red"
+            android:textSize="@dimen/button_font_size" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/orange" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_makeup"
+                android:layout_width="1dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="美妆类"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/red"
+                android:textSize="@dimen/button_font_size" />
+
+            <Button
+                android:id="@+id/btn_digital"
+                android:layout_width="1dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="数码类"
+                android:textColor="@color/red"
+                android:textSize="@dimen/button_font_size" />
+
+            <Button
+                android:id="@+id/btn_clothes"
+                android:layout_width="1dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="服饰类"
+                android:textColor="@color/red"
+                android:textSize="@dimen/button_font_size" />
+
+            <Button
+                android:id="@+id/btn_food"
+                android:layout_width="1dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="食品类"
+                android:textColor="@color/red"
+                android:layout_marginEnd="10dp"
+                android:textSize="@dimen/button_font_size" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/orange" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="19dp">
+
+                <ImageButton
+                    android:id="@+id/ib_tb"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/taobao1" />
+
+               <!-- <ImageButton
+                    android:id="@+id/ib_jd"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/jd" />-->
+                <ImageButton
+                    android:id="@+id/ib_pdd"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/pdd" />
+
+                <ImageButton
+                    android:id="@+id/ib_wph"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/weipinhui" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/orange" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/orange" />
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/orange"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ib_home"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+
+                android:src="@drawable/home" />
+            <!--android:contextClickable="true"-->
+
+            <ImageButton
+                android:id="@+id/ib_cart"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/cart1" />
+
+            <ImageButton
+                android:id="@+id/ib_person"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/person" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
